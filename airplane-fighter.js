@@ -152,7 +152,7 @@ let hitObject = false
 function crash(i) {
     let xCoordinates = ((airplanePlayer.x + airplanePlayer.midle) - obstaclesArray[i].x) 
     let yCoordinates = ((airplanePlayer.y + airplanePlayer.midle) - obstaclesArray[i].y)
-    let distanceBetweenObjects = Math.sqrt( xCoordinates*xCoordinates + yCoordinates*yCoordinates )
+    let distanceBetweenObjects = Math.sqrt(xCoordinates * xCoordinates + yCoordinates * yCoordinates)
     if (distanceBetweenObjects < airplanePlayer.midle + obstaclesArray[i].radius) {
         hitObject = true
     }
